@@ -1,0 +1,13 @@
+type Query {
+    shows(titleFilter: String): [Show]
+}
+
+type Show {
+    title: String,
+    releaseYear: Int,
+    reviews: [Review]
+}
+
+type Review {
+    starRating: Int
+}
